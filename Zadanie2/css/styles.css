@@ -1,0 +1,294 @@
+html {
+    font-size:16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+body {
+    margin:0;
+}
+
+main {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+}
+
+main > section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+main > section:nth-child(2n) {
+    background-color:rgb(245, 243, 243);
+}
+
+.info-section {
+    flex-direction: column;
+    gap:50px;
+}
+
+.info-section div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:25px;
+}
+
+.info-section .info-section-image {
+    width:400px;
+    height:300px;
+    padding:15px;
+    background-color:rgb(245, 243, 243);
+    margin:10px;
+}
+
+.left {
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.right {
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.info-section article {
+    max-width: 23%;
+    margin:10px;
+}
+
+.info-section .sub-info-article {
+    max-width: 50%;
+}
+
+.sub-info-article h2 {
+    text-align: center;
+}
+
+.info-section .info-button {
+    color:white;
+    border-radius:25px;
+    border:none;
+    padding:15px;
+    margin-right:10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.info-section .info-button:hover {
+    color: rgb(233, 229, 229);
+}
+
+.primary{
+    background-color:rgb(255, 20, 147);
+}
+
+.primary:hover {
+    background-color:rgb(214, 38, 132);
+}
+
+.secondary{
+    background-color:rgb(3, 3, 99);
+}
+
+.secondary:hover {
+    background-color:rgb(19, 19, 131);
+}
+
+.info-section form {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:5px;
+}
+
+.info-section form input,
+.info-section form textarea {
+    font-size:0.9em;
+    width: 46%;
+    margin: 10px auto;
+    padding: 10px;
+    border:1px solid rgb(233, 229, 229);
+}
+
+.info-section form input:focus,
+.info-section form textarea:focus {
+    outline:1px solid rgb(206, 202, 202)
+} 
+
+.info-section form textarea {
+    width: calc(95% + 20px);
+    resize: none;
+}
+
+.info-section form input::placeholder,
+.info-section form textarea::placeholder {
+    color: black;
+}
+
+.checkbox-container {
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 0.9em;
+    user-select: none;
+    margin-bottom: 20px;
+    color:rgb(131, 129, 129)
+}
+
+
+.checkbox-container a {
+    color:rgb(255, 20, 147);
+    transition: color 0.3s ease-in-out;
+}
+
+.checkbox-container a:hover {
+    color:rgb(214, 38, 132);
+}
+
+.checkbox-container a:link {
+    color:rgb(255, 20, 147);
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+  
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius:2px;
+}
+
+.checkbox-container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+  
+.checkbox-container input:checked ~ .checkmark {
+    background-color: rgb(214, 38, 132);
+}
+  
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkbox-container .checkmark:after {
+    left: 6.5px;
+    top: 3px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.info-section form button {
+    font-size: 0.9em;
+    color:white;
+    border-radius:25px;
+    border:none;
+    padding:15px;
+    margin: 0 auto;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    background-color:rgb(255, 20, 147);
+}
+
+.info-section form button:hover {
+    color: rgb(233, 229, 229);
+    background-color:rgb(214, 38, 132);
+}
+
+.other-section div > section{
+    flex-direction: row;
+    width:20%;
+    background-color:white;
+    border-radius: 10px;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.other-section div > section > div{
+    padding:10px;
+    align-items: start;
+    flex-direction: column;
+    gap:0;
+}
+
+.other-section div section div h3 {
+    margin:0;
+}
+
+.other-section div section div div p{
+    color: grey;
+}
+
+.other-section div section div div a{
+    text-decoration: none;
+    color: rgb(255, 20, 147);
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.other-section div section div div a:hover{
+    color:rgb(214, 38, 132);
+}
+
+.other-section section img {
+    width:100%;
+    height:12em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.info-section table {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+.info-section table thead tr td {
+    background-color: rgb(3, 3, 99);
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.info-section table thead tr td:first-child {
+    border-top-left-radius: 10px;
+}
+
+.info-section table thead tr td:last-child {
+    border-top-right-radius: 10px;
+}
+
+.info-section table tbody tr td {
+    padding: 15px;
+    border: 1px solid rgb(233, 229, 229);
+}
+
+.info-section table tbody tr:nth-child(2n) {
+    background-color: rgb(252, 250, 250);
+}
