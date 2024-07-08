@@ -146,6 +146,7 @@ main > section:nth-child(2n) {
     margin: 10px auto;
     padding: 10px;
     border:1px solid rgb(233, 229, 229);
+    border-radius:5px;
 }
 
 .info-section form input:focus,
