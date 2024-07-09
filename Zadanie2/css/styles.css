@@ -1,121 +1,114 @@
 html {
     font-size:16px;
-    font-family: "Varela Round", sans-serif;
-    line-height: 1.5;
 }
 
 body {
     margin:0;
+    padding:0;
 }
 
-main {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    width:100%;
+.container {
+    padding-top:4em;
 }
 
-main > section {
+.container > div:nth-child(2n) {
+    background-color: rgb(244, 244, 244);
+}
+
+.row {
+    max-width: 1240px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 5em;
+    margin: 0 auto;
+}
+
+.col-6 {
+    flex: 0 0 50%;
+    max-width: 100%;
     box-sizing: border-box;
 }
 
-main section > h2, .sub-info-article h2 {
-    font-size: 2rem;
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
-main > section:nth-child(2n) {
-    background-color:rgb(245, 243, 243);
+.main-section .row {
+    gap:60px;
+    padding-bottom:5em;
 }
 
-.info-section {
-    flex-direction: column;
+.sub-info-section, .form-section, .other-section {
+    padding: 5em 0;
 }
 
-.main-section {
-    gap:50px;
-    padding: 10px;
+.table-section {
+    padding: 5em 0 13em 0;
 }
 
-.main-section h2 {
-    font-size: 2em;
+.main-section h2, .sub-info-section h2, .form-section h2, .other-section h2, .table-section h2{
+    font-size: 2.625em;
+    line-height: 1.2;
+    color: rgb(23, 18, 16);
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
 }
 
-.main-section h3{
-    font-size:0.8em;
-    font-weight: 500;
+.form-section h2, .other-section h2, .table-section h2 {
+    margin-top:6px;
 }
 
-.main-section p{
-    font-size:0.8em;
-    color: rgb(85, 85, 85);
+.main-section p, .main-section li, .sub-info-section p {
+    font-size: 1em;
+    line-height: 1.7;
+    color: rgb(67, 59, 59);
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
 }
 
-.info-section div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:25px;
+.main-section .bold {
+    font-weight:400;
 }
 
-.info-section .info-section-image {
-    width:400px;
-    height:300px;
-    padding:15px;
-    background-color:rgb(245, 243, 243);
-    margin:10px;
+.main-section .medium {
+    font-weight:500;
+}
+
+.info-section-image {
+    padding:1.25em;
+    background-color: rgb(244, 244, 244);
 }
 
 .left {
-    border-top-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 70px;
 }
 
 .right {
-    border-top-right-radius: 50px;
-    border-bottom-left-radius: 50px;
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70px;
 }
 
-.info-section article {
-    max-width: 23%;
-    margin:10px;
-}
-
-.info-section .sub-info-article {
-    max-width: 50%;
-}
-
-.sub-info-article h2 {
-    text-align: center;
-}
-
-.sub-info-article p {
-    color: rgb(85, 85, 85);
-    font-size:0.8em;
-}
-
-.info-section .info-button {
+.info-button {
+    height:48px;
     color:white;
-    border-radius:25px;
+    border-radius:30px;
     border:none;
-    padding:15px;
-    margin-right:10px;
-    font-size:0.7em;
+    padding:13px 26px;
+    margin-right:26px;
+    font-size:0.9375em;
     cursor: pointer;
-    font-weight: bold;
     transition: all 0.3s ease-in-out;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
 }
 
-.info-section .info-button:hover {
+.info-button:hover {
     color: rgb(233, 229, 229);
 }
 
 .primary{
-    background-color:rgb(255, 20, 147);
+    background-color:rgb(234, 7, 117);
 }
 
 .primary:hover {
@@ -123,60 +116,81 @@ main > section:nth-child(2n) {
 }
 
 .secondary{
-    background-color:rgb(3, 3, 99);
+    background-color: rgb(3, 3, 99);
 }
 
 .secondary:hover {
     background-color:rgb(19, 19, 131);
 }
 
-.info-section form {
-    width: 50%;
+ul li {
+    font-size: 1em;
+    line-height: 1.7;
+    color: rgb(67, 59, 59);
+}
+
+.sub-info-wrapper, .form-wrapper, .table-wrapper, .other-wrapper{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sub-info-wrapper div {
+    display:flex;
+    gap:60px;
+}
+
+form {
+    width: 80%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
-    gap:5px;
 }
 
-.info-section form input,
-.info-section form textarea {
-    font-size:0.9em;
-    width: 46%;
-    margin: 10px auto;
-    padding: 10px;
+form input,
+form textarea {
+    font-size:0.9375em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    height: 46px;
+    width: 45%;
+    margin: 13px 10px;
+    padding: 10px 0 10px 16px; 
     border:1px solid rgb(233, 229, 229);
     border-radius:5px;
 }
 
-.info-section form input:focus,
-.info-section form textarea:focus {
+form input:focus,
+form textarea:focus {
     outline:1px solid rgb(206, 202, 202)
 } 
 
-.info-section form textarea {
-    width: calc(95% + 20px);
+form textarea {
+    width: calc(90% + 36px);
     resize: none;
+    height: 89px;
 }
 
-.info-section form input::placeholder,
-.info-section form textarea::placeholder {
+form input::placeholder,
+form textarea::placeholder {
     color: black;
 }
 
 .checkbox-container {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
     position: relative;
     padding-left: 35px;
     cursor: pointer;
-    font-size: 0.9em;
+    font-size: 0.8125em;
     user-select: none;
     margin-bottom: 20px;
-    color:rgb(131, 129, 129)
+    color:rgb(150, 144, 144);
 }
 
 
 .checkbox-container a {
-    color:rgb(255, 20, 147);
+    color:rgb(234, 7, 117);
     transition: color 0.3s ease-in-out;
 }
 
@@ -185,7 +199,7 @@ main > section:nth-child(2n) {
 }
 
 .checkbox-container a:link {
-    color:rgb(255, 20, 147);
+    color:rgb(234, 7, 117);
 }
 
 .checkbox-container input {
@@ -211,7 +225,7 @@ main > section:nth-child(2n) {
 }
   
 .checkbox-container input:checked ~ .checkmark {
-    background-color: rgb(214, 38, 132);
+    background-color:rgb(234, 7, 117);
 }
   
 .checkmark:after {
@@ -230,34 +244,44 @@ main > section:nth-child(2n) {
     width: 4px;
     height: 8px;
     border: solid white;
-    border-width: 0 3px 3px 0;
+    border-width: 0 2px 2px 0;
     transform: rotate(45deg);
 }
 
-.info-section form button {
-    font-size: 0.9em;
+form button {
+    font-size: 0.9375em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
     color:white;
     border-radius:25px;
     border:none;
     padding:15px;
     margin: 0 auto;
     cursor: pointer;
-    font-weight: bold;
     transition: all 0.3s ease-in-out;
-    background-color:rgb(255, 20, 147);
+    background-color:rgb(234, 7, 117);
 }
 
-.info-section form button:hover {
+form button:hover {
     color: rgb(233, 229, 229);
     background-color:rgb(214, 38, 132);
 }
 
-.other-section div > section{
+.other-section {
+    display: flex;
     flex-direction: row;
-    width:20%;
+}
+
+.other-wrapper > div {
+    display:flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+.other-section div > section{
     background-color:white;
     border-radius: 10px;
-    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .other-section div > section > div{
@@ -269,28 +293,37 @@ main > section:nth-child(2n) {
 
 .other-section div section div h3 {
     margin:0;
-    font-size:1.1em;
+    font-size:1.25em;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    color: rgb(23, 18, 16);
 }
 
 .other-section div section div p{
-    font-size:0.8em;
-    color: rgb(85, 85, 85);
+    font-size:0.9375em;
+    color: rgb(67, 59, 59);
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
 }
 
 .other-section div section div div {
-    gap:8em;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .other-section div section div div p{
-    color: rgb(196, 195, 195);
+    color: rgb(150, 144, 144);
 }
 
 .other-section div section div div a{
     text-decoration: none;
-    color: rgb(255, 20, 147);
+    color:rgb(234, 7, 117);
     font-weight: bold;
     transition: color 0.3s ease-in-out;
-    font-size:0.8em;
+    font-size:0.9375em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
 }
 
 .other-section div section div div a:hover{
@@ -304,38 +337,38 @@ main > section:nth-child(2n) {
     border-top-right-radius: 10px;
 }
 
-.info-section table {
+table {
     border-collapse: collapse;
-    width: 50%;
-    font-size:0.8em;
+    width:80%;
 }
 
-.info-section table thead tr td {
+table thead tr td {
     background-color: rgb(3, 3, 99);
     color: white;
     padding: 10px;
     text-transform: uppercase;
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+    font-size:0.875em;
 }
 
-.info-section table thead tr td:first-child {
+table thead tr td:first-child {
     border-top-left-radius: 10px;
 }
 
-.info-section table thead tr td:last-child {
+table thead tr td:last-child {
     border-top-right-radius: 10px;
 }
 
-.info-section table tbody tr td {
+table tbody tr td {
+    font-size:0.9375em;
+    font-family: "Poppins", sans-serif;
+    color: rgb(67, 59, 59);
+    font-weight: 400;
     padding: 15px;
     border: 1px solid rgb(233, 229, 229);
 }
 
-.info-section table tbody tr:nth-child(2n) {
+table tbody tr:nth-child(2n) {
     background-color: rgb(252, 250, 250);
-}
-
-svg {
-    width:30px;
-    height:30px;
-    rotate: 240deg;
 }
