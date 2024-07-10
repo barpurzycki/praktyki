@@ -1,14 +1,15 @@
 html {
-    font-size:16px;
+    font-size: 16px;
 }
 
 body {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
-    padding-top:4em;
+    width: 100%;
+    padding-top: 4em;
 }
 
 .container > div:nth-child(2n) {
@@ -16,26 +17,33 @@ body {
 }
 
 .row {
+    margin: 0 auto;
     max-width: 1240px;
     display: flex;
-    margin: 0 auto;
+    flex-wrap: wrap;
 }
 
-.col-6 {
-    flex: 0 0 50%;
-    max-width: 100%;
+[class*='col-'] {
+    padding-right: 15px;
+    padding-left: 15px;
     box-sizing: border-box;
 }
 
-.col-12 {
-    flex: 0 0 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-}
+.col-1 { flex: 0 0 8.33%; max-width: 8.33%; }
+.col-2 { flex: 0 0 16.66%; max-width: 16.66%; }
+.col-3 { flex: 0 0 25%; max-width: 25%; }
+.col-4 { flex: 0 0 33.33%; max-width: 33.33%; }
+.col-5 { flex: 0 0 41.66%; max-width: 41.66%; }
+.col-6 { flex: 0 0 50%; max-width: 50%; }
+.col-7 { flex: 0 0 58.33%; max-width: 58.33%; }
+.col-8 { flex: 0 0 66.66%; max-width: 66.66%; }
+.col-9 { flex: 0 0 75%; max-width: 75%; }
+.col-10 { flex: 0 0 83.33%; max-width: 83.33%; }
+.col-11 { flex: 0 0 91.66%; max-width: 91.66%; }
+.col-12 { flex: 0 0 100%; max-width: 100%; }
 
 .main-section .row {
-    gap:60px;
-    padding-bottom:5em;
+    padding-bottom: 5em;
 }
 
 .sub-info-section, .form-section, .other-section {
@@ -46,7 +54,7 @@ body {
     padding: 5em 0 13em 0;
 }
 
-.main-section h2, .sub-info-section h2, .form-section h2, .other-section h2, .table-section h2{
+.main-section h2, .sub-info-section h2, .form-section h2, .other-section h2, .table-section h2 {
     font-size: 2.625em;
     line-height: 1.2;
     color: rgb(23, 18, 16);
@@ -55,7 +63,7 @@ body {
 }
 
 .form-section h2, .other-section h2, .table-section h2 {
-    margin-top:6px;
+    margin-top: 6px;
 }
 
 .main-section p, .main-section li, .sub-info-section p {
@@ -67,15 +75,15 @@ body {
 }
 
 .main-section .bold {
-    font-weight:400;
+    font-weight: 400;
 }
 
 .main-section .medium {
-    font-weight:500;
+    font-weight: 500;
 }
 
 .info-section-image {
-    padding:1.25em;
+    padding: 1.25em;
     background-color: rgb(244, 244, 244);
 }
 
@@ -90,13 +98,13 @@ body {
 }
 
 .info-button {
-    height:48px;
-    color:white;
-    border-radius:30px;
-    border:none;
-    padding:13px 26px;
-    margin-right:26px;
-    font-size:0.9375em;
+    height: 48px;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    padding: 13px 26px;
+    margin-right: 26px;
+    font-size: 0.9375em;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     font-family: "Poppins", sans-serif;
@@ -107,20 +115,20 @@ body {
     color: rgb(233, 229, 229);
 }
 
-.primary{
-    background-color:rgb(234, 7, 117);
+.primary {
+    background-color: rgb(234, 7, 117);
 }
 
 .primary:hover {
-    background-color:rgb(214, 38, 132);
+    background-color: rgb(214, 38, 132);
 }
 
-.secondary{
+.secondary {
     background-color: rgb(3, 3, 99);
 }
 
 .secondary:hover {
-    background-color:rgb(19, 19, 131);
+    background-color: rgb(19, 19, 131);
 }
 
 ul li {
@@ -129,15 +137,15 @@ ul li {
     color: rgb(67, 59, 59);
 }
 
-.sub-info-wrapper, .form-wrapper, .table-wrapper, .other-wrapper{
-    display:flex;
+.sub-info-wrapper, .form-wrapper, .table-wrapper, .other-wrapper {
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .sub-info-wrapper div {
-    display:flex;
-    gap:60px;
+    display: flex;
+    gap: 60px;
 }
 
 form {
@@ -149,15 +157,15 @@ form {
 
 form input,
 form textarea {
-    font-size:0.9375em;
+    font-size: 0.9375em;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     height: 46px;
     width: 45%;
     margin: 13px 10px;
-    padding: 10px 0 10px 16px; 
-    border:1px solid rgb(233, 229, 229);
-    border-radius:5px;
+    padding: 10px 0 10px 16px;
+    border: 1px solid rgb(233, 229, 229);
+    border-radius: 5px;
 }
 
 form input:focus,
