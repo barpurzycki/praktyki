@@ -22,12 +22,14 @@
                         <h2>Nunc porta quam et lorem elementum</h2>
                         <p class="bold">Nullam in fringilla est. Curabitur condimentum ante eget turpis tristique, pulvinar ornare ex semper.</p>
                         <p>Curabitur tortor sapien, dictum at ante ut, ullamcorper sodales nibh. Suspendisse quis nibh at risus rhoncus cursus eu a dolor. Nulla id vestibulum ipsum. Etiam sagittis, sem id vehicula vestibulum, turpis nunc lacinia erat, nec suscipit diam nisl sit amet orci. Vestibulum non mi ac elit semper tincidunt. Phasellus vel hendrerit sapien, a maximus velit. Mauris nec rutrum tortor. Morbi placerat lectus nisl, eget semper quam pulvinar.</p>
-                        <button class="info-button primary">
-                            Button Primary
-                        </button>
-                        <button class="info-button secondary">
-                            Button Secondary
-                        </button>
+                        <div class="button-container">
+                            <button class="info-button primary">
+                                Button Primary
+                            </button>
+                            <button class="info-button secondary">
+                                Button Secondary
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
@@ -53,7 +55,7 @@
                     <div class="col-12">
                         <div class="sub-info-wrapper">
                             <h2>Ultrices orci sagittis at</h2>
-                            <div>
+                            <div class="sub-info-text-wrapper">
                                 <p>Curabitur tortor sapien, dictum at ante ut, ullamcorper sodales nibh. Suspendisse quis nibh at risus rhoncus cursus eu a dolor. Nulla id vestibulum ipsum. Etiam sagittis, sem id vehicula vestibulum, turpis nunc lacinia erat, nec suscipit diam nisl sit amet orci. Vestibulum non mi ac elit semper tincidunt. Phasellus vel hendrerit sapien, a maximus velit. Mauris nec rutrum tortor. Morbi placerat lectus nisl, eget semper quam pulvinar.</p>
                                 <p>Curabitur tortor sapien, dictum at ante ut, ullamcorper sodales nibh. Suspendisse quis nibh at risus rhoncus cursus eu a dolor. Nulla id vestibulum ipsum. Etiam sagittis, sem id vehicula vestibulum, turpis nunc lacinia erat, nec suscipit diam nisl sit amet orci. Vestibulum non mi ac elit semper tincidunt. Phasellus vel hendrerit sapien, a maximus velit. Mauris nec rutrum tortor. Morbi placerat lectus nisl, eget semper quam pulvinar.</p>
                             </div>
@@ -70,16 +72,16 @@
                             </svg>
                             <h2>Formularz kontaktowy</h2>
                             <form>
-                                <input type="text" name="name-surname" placeholder="Imię i Nazwisko">
-                                <input type="email" name="email" placeholder="Adres e-mail">
-                                <input type="tel" name="phone" placeholder="Numer telefonu">
-                                <input type="text" name="address" placeholder="Miejscowość">
-                                <textarea name="comment" placeholder="Dodatkowe uwagi (opcjonalne)" rows="5"></textarea>
+                                <input type="text" name="name-surname" placeholder="Imię i Nazwisko" class="input-control">
+                                <input type="email" name="email" placeholder="Adres e-mail" class="input-control">
+                                <input type="tel" name="phone" placeholder="Numer telefonu" class="input-control">
+                                <input type="text" name="address" placeholder="Miejscowość" class="input-control">
+                                <textarea name="comment" placeholder="Dodatkowe uwagi (opcjonalne)" rows="5" class="input-control textarea-control"></textarea>
                                 <label class="checkbox-container"> Wyrażam zgodę na przetwarzanie moich danych osobowych firmie MyFiber w celu kontaktu za pośrednictwem formularza kontaktowego oraz przesłania oferty handlowej drogą elektroniczną. Więcej informacji znajdziesz na stronie <a href="#">polityki prywatności</a>.
                                     <input type="checkbox" checked="checked">
                                     <span class="checkmark"></span>
                                 </label>
-                                <button>Wyślij wiadomość</button>
+                                <button class="button-control">Wyślij wiadomość</button>
                             </form>
                         </div>
                     </div>
@@ -93,35 +95,41 @@
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M35.7323 13.5327C34.824 14.0171 34.5972 13.9567 34.0557 14.1684C31.7496 15.2589 30.0437 18.9299 31.3663 21.6307C34.1596 27.3344 28.6893 33.6636 22.7277 31.6012C18.8004 30.2426 18.4895 27.0295 17.7819 26.0164C17.1286 25.0811 16.3634 24.3931 15.3305 23.9066C10.8786 21.8089 9.64961 25.9773 4.8115 23.8879C1.20876 22.3318 -0.46631 18.1137 1.07045 14.4667C3.62183 8.41174 11.9913 8.87347 14.2133 14.7055C14.894 16.485 15.5954 17.5213 17.4587 18.3271C22.5575 20.5301 28.2787 15.5411 25.6464 9.2884C25.1718 7.72354 25.2181 5.9877 25.9018 4.36424C27.4386 0.71711 31.6062 -0.978467 35.2094 0.577874C40.7948 2.98908 40.8826 10.7902 35.7323 13.5328" fill="#EA0775"/>
                             </svg>
                             <h2>Baza wiedzy</h2>
-                            <div>
-                                <section>
-                                    <img src="images/News1.jpg" alt="News1">
-                                    <div>
+                            <div class="other-section-div-wrapper">
+                                <section class="news-wrapper">
+                                    <div class="image-holder">
+                                        <img src="images/News1.jpg" alt="News1">
+                                    </div>
+                                    <div class="news-text-wrapper">
                                         <h3>Fusce vulputate, erat nec facilisis condimentum</h3>
                                         <p>Curabitur tortor sapien, dictum at ante ut, ullamcorper sodales nibh. Suspendisse quis nibh at risus rhoncus cursus eu...</p>
-                                        <div>
+                                        <div class="news-info-wrapper">
                                             <p>20.10.2022</p>
                                             <a href="#">Czytaj więcej &#8594</a>
                                         </div>
                                     </div>
                                 </section>
-                                <section>
-                                    <img src="images/News2.jpg" alt="News2">
-                                    <div>
+                                <section class="news-wrapper">
+                                    <div class="image-holder">
+                                        <img src="images/News2.jpg" alt="News2">
+                                    </div>
+                                    <div class="news-text-wrapper">
                                         <h3>Phasellus sit amet hendrerit sapien, ut porta felis</h3>
                                         <p>Curabitur tortor sapien, dictum at ante ut, ullamcorper sodales nibh. Suspendisse quis nibh at risus rhoncus cursus eu...</p>
-                                        <div>
+                                        <div class="news-info-wrapper">
                                             <p>20.10.2022</p>
                                             <a href="#">Czytaj więcej &#8594</a>
                                         </div>
                                     </div>
                                 </section>
-                                <section>
-                                    <img src="images/News3.jpg" alt="News3">
-                                    <div>
+                                <section class="news-wrapper">
+                                    <div class="image-holder">
+                                        <img src="images/News3.jpg" alt="News3">
+                                    </div>
+                                    <div class="news-text-wrapper">
                                         <h3>Mauris eleifend bibendum leo</h3>
                                         <p>Curabitur tortor sapien, dictum at ante ut, ullamcorper sodales nibh. Suspendisse quis nibh at risus rhoncus cursus eu....</p>
-                                        <div>
+                                        <div class="news-info-wrapper">
                                             <p>20.10.2022</p>
                                             <a href="#">Czytaj więcej &#8594</a>
                                         </div>
