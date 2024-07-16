@@ -1,0 +1,472 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width:100%;
+}
+
+.container {
+    max-width: 100%;
+    padding-top: 4em;
+}
+
+.container > div:nth-child(2n) {
+    background-color: rgb(244, 244, 244);
+}
+
+.row {
+    margin: 0 auto;
+    max-width: 1240px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+[class*='col-'] {
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.col-1 { flex: 0 0 8.33%; max-width: 8.33%; }
+.col-2 { flex: 0 0 16.66%; max-width: 16.66%; }
+.col-3 { flex: 0 0 25%; max-width: 25%; }
+.col-4 { flex: 0 0 33.33%; max-width: 33.33%; }
+.col-5 { flex: 0 0 41.66%; max-width: 41.66%; }
+.col-6 { flex: 0 0 50%; max-width: 50%; }
+.col-7 { flex: 0 0 58.33%; max-width: 58.33%; }
+.col-8 { flex: 0 0 66.66%; max-width: 66.66%; }
+.col-9 { flex: 0 0 75%; max-width: 75%; }
+.col-10 { flex: 0 0 83.33%; max-width: 83.33%; }
+.col-11 { flex: 0 0 91.66%; max-width: 91.66%; }
+.col-12 { flex: 0 0 100%; max-width: 100%; }
+
+.main-section .row {
+    padding-bottom: 5em;
+}
+
+.sub-info-section, .form-section, .other-section {
+    padding: 5em 0;
+}
+
+.table-section {
+    padding: 5em 0 13em 0;
+}
+
+.main-section h2, .sub-info-section h2, .form-section h2, .other-section h2, .table-section h2, .h2 {
+    font-size: 2.625em;
+    line-height: 1.2;
+    color: rgb(23, 18, 16);
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+}
+
+.form-section h2, .other-section h2, .table-section h2, .h2 {
+    margin-top: 6px;
+}
+
+.main-section p, .main-section li, .sub-info-section p {
+    font-size: 1em;
+    line-height: 1.7;
+    color: rgb(67, 59, 59);
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+.main-section .bold {
+    font-weight: 400;
+}
+
+.main-section .medium {
+    font-weight: 500;
+}
+
+.info-section-image {
+    min-width: 130px;
+    max-width: 100%;
+    padding: 1.25em;
+    background-color: rgb(244, 244, 244);
+}
+
+.left {
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+}
+
+.right {
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+}
+
+.info-button {
+    height: 48px;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    padding: 0.8125em 1.625em;
+    margin-right: 26px;
+    font-size: 0.9375em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.info-button:hover {
+    color: rgb(233, 229, 229);
+}
+
+.primary {
+    background-color: rgb(234, 7, 117);
+}
+
+.primary:hover {
+    background-color: rgb(214, 38, 132);
+}
+
+.secondary {
+    background-color: rgb(3, 3, 99);
+}
+
+.secondary:hover {
+    background-color: rgb(19, 19, 131);
+}
+
+ul li {
+    font-size: 1em;
+    line-height: 1.7;
+    color: rgb(67, 59, 59);
+}
+
+.sub-info-wrapper, .form-wrapper, .table-wrapper, .other-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sub-info-wrapper div {
+    display: flex;
+    gap: 60px;
+}
+
+form {
+    max-width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.input-control{
+    font-size: 0.9375em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    height: 24px;
+    width: 45%;
+    margin: 13px 10px;
+    padding: 10px 0 10px 16px;
+    border: 1px solid rgb(233, 229, 229);
+    border-radius: 5px;
+}
+
+.input-control:focus {
+    outline:1px solid rgb(206, 202, 202)
+} 
+
+.input-control::placeholder {
+    color: black;
+}
+
+.textarea-control {
+    width: calc(90% + 36px);
+    resize: none;
+    height: 67px;
+}
+
+.checkbox-container {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 0.8125em;
+    user-select: none;
+    margin-bottom: 20px;
+    color:rgb(150, 144, 144);
+}
+
+
+.checkbox-container a {
+    color:rgb(234, 7, 117);
+    transition: color 0.3s ease-in-out;
+}
+
+.checkbox-container a:hover {
+    color:rgb(214, 38, 132);
+}
+
+.checkbox-container a:link {
+    color:rgb(234, 7, 117);
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+  
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius:2px;
+}
+
+.checkbox-container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+  
+.checkbox-container input:checked ~ .checkmark {
+    background-color:rgb(234, 7, 117);
+}
+  
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkbox-container .checkmark:after {
+    left: 6.5px;
+    top: 3px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.button-control {
+    font-size: 0.9375em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color:white;
+    border-radius:25px;
+    border:none;
+    padding:15px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background-color:rgb(234, 7, 117);
+}
+
+.button-control:hover {
+    color: rgb(233, 229, 229);
+    background-color:rgb(214, 38, 132);
+}
+
+.other-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.other-wrapper > div {
+    display:flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+.other-section div > section{
+    background-color:white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.image-holder {
+    padding:0;
+    max-height: 200px;
+    width:100%;
+}
+
+.other-section section .image-holder img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    max-width: 100%;
+}
+
+.other-section div > section > div:not(:first-child){
+    padding:20px;
+    align-items: start;
+    flex-direction: column;
+    gap:0;
+}
+
+.other-section div section div h3 {
+    margin:0;
+    font-size:1.25em;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    color: rgb(23, 18, 16);
+}
+
+.other-section div section div p{
+    font-size:0.9375em;
+    color: rgb(67, 59, 59);
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+.other-section div section div div {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.other-section div section div div p{
+    color: rgb(150, 144, 144);
+}
+
+.other-section div section div div a{
+    text-decoration: none;
+    color:rgb(234, 7, 117);
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    font-size:0.9375em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.other-section div section div div a:hover{
+    color:rgb(214, 38, 132);
+}
+
+table {
+    border-collapse: collapse;
+    width:80%;
+}
+
+table thead tr td {
+    background-color: rgb(3, 3, 99);
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+    font-size:0.875em;
+}
+
+table thead tr td:first-child {
+    border-top-left-radius: 10px;
+}
+
+table thead tr td:last-child {
+    border-top-right-radius: 10px;
+}
+
+table tbody tr td {
+    font-size:0.9375em;
+    font-family: "Poppins", sans-serif;
+    color: rgb(67, 59, 59);
+    font-weight: 400;
+    padding: 15px;
+    border: 1px solid rgb(233, 229, 229);
+}
+
+table tbody tr:nth-child(2n) {
+    background-color: rgb(252, 250, 250);
+}
+
+@media only screen and (max-width: 420px) {
+
+    .col-6 {
+        flex: 0 0 100%; 
+        max-width: 100%; 
+    }
+
+    .main-section, .sub-info-section, .form-section, .other-section, .table-section {
+        font-size:0.6em;
+    }
+
+    .info-section-image{
+        max-width: 90%;
+    }
+
+    .form-section form .input-control{
+        width:90%;
+    }
+
+    .other-wrapper > div{
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (min-width: 421px) and (max-width: 768px){
+
+    .col-6 {
+        flex: 0 0 100%; 
+        max-width: 100%; 
+    }
+
+    .main-section, .sub-info-section, .form-section, .other-section, .table-section {
+        font-size:0.6em;
+    }
+
+    .info-section-image{
+        max-width: 70%;
+    }
+
+    .form-section form .input-control{
+        width:90%;
+    }
+
+    .other-wrapper > div {
+        gap:20px;
+    }
+
+    .news-wrapper {
+        font-size:0.7em;
+    }
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px){
+
+    .main-section, .sub-info-section, .form-section, .other-section, .table-section {
+        font-size:0.7em;
+    }
+
+    .info-section-image{
+        max-width: 90%;
+    }
+
+    .form-section form .input-control{
+        width:40%;
+    }
+
+    .form-section form .textarea-control {
+        width: calc(80% + 36px);
+    }
+
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1240px){
+
+    .main-section, .sub-info-section, .form-section, .other-section, .table-section {
+        font-size:0.8em;
+    }
+
+    .info-section-image{
+        max-width: 90%;
+    }
+}
