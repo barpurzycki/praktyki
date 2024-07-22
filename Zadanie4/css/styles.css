@@ -1,0 +1,350 @@
+html {
+    font-size:16px;
+}
+
+body {
+    margin:0;
+    padding:0;
+}
+
+.full-width-bg:nth-child(even) {
+    background-color: rgb(244, 244, 244);
+}
+
+.full-width-bg:first-child {
+    padding-top:64px;
+}
+
+.full-width-bg:last-child {
+    padding-bottom:221px;
+}
+
+.full-width-bg {
+    padding:80px 0;
+}
+
+.h2 {
+    font-size: 2.625em;
+    line-height: 1.2;
+    color: rgb(23, 18, 16);
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    margin-bottom:40px;
+}
+
+.main-section .h2 {
+    margin-bottom:20px;
+}
+
+.main-section .row:first-child {
+    margin-bottom:80px;
+}
+
+.main-section p, .main-section li, .sub-main-section p {
+    font-size: 1em;
+    line-height: 1.7;
+    color: rgb(67, 59, 59);
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+.main-section .bold {
+    font-weight: 400;
+}
+
+.main-section .medium {
+    font-weight: 500;
+}
+
+.info-section-image {
+    min-width: 250px;
+    max-width: 100%;
+    padding: 1.25em;
+    background-color: rgb(244, 244, 244);
+}
+
+.left {
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+}
+
+.right {
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+}
+
+.button-container button{
+    height: 48px;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    padding: 13px 26px;
+    margin-right: 26px;
+    font-size: 0.9375em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.button-container button:hover {
+    color: rgb(233, 229, 229);
+}
+
+.btn-primary {
+    background-color: rgb(234, 7, 117);
+}
+
+.btn-primary:hover {
+    background-color: rgb(214, 38, 132);
+}
+
+.btn-secondary {
+    background-color: rgb(3, 3, 99);
+}
+
+.btn-secondary:hover {
+    background-color: rgb(19, 19, 131);
+}
+
+.sub-info-wrapper, .form-wrapper, .news-wrapper, .table-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sub-info-wrapper div {
+    display: flex;
+    gap: 60px;
+}
+
+svg {
+    padding-bottom:6px;
+}
+
+form {
+    max-width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.form-control{
+    font-size: 0.9375em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    height: 46px;
+    width: 45%;
+    margin: 13px 10px;
+    padding: 10px 0 10px 16px;
+    border: 1px solid rgb(233, 229, 229);
+    border-radius: 5px;
+}
+
+.textarea-control {
+    width: calc(90% + 20px);
+    resize: none;
+    height: 89px;
+}
+
+.checkbox-container {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 0.8125em;
+    user-select: none;
+    margin-bottom: 20px;
+    color:rgb(150, 144, 144);
+    max-width: 95%;
+}
+
+
+.checkbox-container a {
+    color:rgb(234, 7, 117);
+    transition: color 0.3s ease-in-out;
+}
+
+.checkbox-container a:hover {
+    color:rgb(214, 38, 132);
+}
+
+.checkbox-container a:link {
+    color:rgb(234, 7, 117);
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+  
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius:2px;
+}
+
+.checkbox-container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+  
+.checkbox-container input:checked ~ .checkmark {
+    background-color:rgb(234, 7, 117);
+}
+  
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkbox-container .checkmark:after {
+    left: 6.5px;
+    top: 5px;
+    width: 5px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.form-button {
+    font-size: 0.9375em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color:white;
+    border-radius:25px;
+    border:none;
+    padding:15px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background-color:rgb(234, 7, 117);
+}
+
+.news-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.news-section-div-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+.news-section div > section {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.image-holder {
+    padding: 0;
+    width: 100%;
+    max-height: 200px; 
+}
+
+.news-section section .image-holder img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.news-section div > section > div:not(:first-child) {
+    padding: 20px;
+    align-items: start;
+    flex-direction: column;
+    gap: 0;
+}
+
+.news-section div section div h3 {
+    margin: 0;
+    font-size: 1.25em;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    color: rgb(23, 18, 16);
+    padding-bottom:8px;
+}
+
+.news-section div section div p {
+    font-size: 0.9375em;
+    color: rgb(67, 59, 59);
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+.news-section div section div div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.news-section div section div div p {
+    color: rgb(150, 144, 144);
+}
+
+.news-section div section div div a {
+    text-decoration: none;
+    color: rgb(234, 7, 117);
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    font-size: 0.9375em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.news-section div section div div a:hover {
+    color: rgb(214, 38, 132);
+}
+
+
+table {
+    border-collapse: collapse;
+    width:80%;
+}
+
+table thead tr td {
+    background-color: rgb(3, 3, 99);
+    color: white;
+    margin: 10px;
+    text-transform: uppercase;
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+    font-size:0.875em;
+    padding: 16px 20px 16px 22px;
+}
+
+table thead tr td:first-child {
+    border-top-left-radius: 10px;
+}
+
+table thead tr td:last-child {
+    border-top-right-radius: 10px;
+}
+
+table tbody tr td {
+    font-size:0.9375em;
+    font-family: "Poppins", sans-serif;
+    color: rgb(67, 59, 59);
+    font-weight: 400;
+    padding: 15px;
+    border: 1px solid rgb(233, 229, 229);
+}
+
+table tbody tr:nth-child(2n) {
+    background-color: rgb(252, 250, 250);
+}
