@@ -312,12 +312,12 @@ form {
 }
 
 
-table {
+.table {
     border-collapse: collapse;
-    width:80%;
+    max-width:80%;
 }
 
-table thead tr td {
+.table thead tr th {
     background-color: rgb(3, 3, 99);
     color: white;
     margin: 10px;
@@ -328,15 +328,15 @@ table thead tr td {
     padding: 16px 20px 16px 22px;
 }
 
-table thead tr td:first-child {
+.table thead tr th:first-child {
     border-top-left-radius: 10px;
 }
 
-table thead tr td:last-child {
+.table thead tr th:last-child {
     border-top-right-radius: 10px;
 }
 
-table tbody tr td {
+.table tbody tr td {
     font-size:0.9375em;
     font-family: "Poppins", sans-serif;
     color: rgb(67, 59, 59);
@@ -345,6 +345,35 @@ table tbody tr td {
     border: 1px solid rgb(233, 229, 229);
 }
 
-table tbody tr:nth-child(2n) {
+.table tbody tr:nth-child(2n) {
     background-color: rgb(252, 250, 250);
 }
+
+@media (max-width: 767px) {
+    #news3 {
+        display: none;
+    }
+
+    .table {
+        font-size:12px;
+    }
+
+    .h2 {
+        font-size:1.8em;
+    }
+}
+
+@media (max-width: 524px) {
+    #news2 {
+        display: none;
+    }
+
+    .table {
+        font-size:8px;
+    }
+
+    .form-control {
+        width:90%;
+    }
+}
+
